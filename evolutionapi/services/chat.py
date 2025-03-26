@@ -7,7 +7,7 @@ class ChatService:
 
     def check_is_whatsapp_numbers(self, instance_id: str, data: CheckIsWhatsappNumber, instance_token: str):
         return self.client.post(
-            f'chat/whatsappNumber/{instance_id}',
+            f'chat/whatsappNumbers/{instance_id}',
             data=data.__dict__,
             instance_token=instance_token
         )
